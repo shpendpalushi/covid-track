@@ -1,51 +1,24 @@
-/* Reset Select */
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background: #2c3e50;
-    background-image: none;
-  }
-  /* Remove IE arrow */
-  select::-ms-expand {
-    display: none;
-  }
-  /* Custom Select */
-  .select {
-    position: relative;
-    display: flex;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    background: #2c3e50;
-    overflow: hidden;
-    border-radius: .25em;
-  }
-  select {
-    flex: 1;
-    padding: 0 .5em;
-    color: #fff;
-    cursor: pointer;
-  }
-  /* Arrow */
-  .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: #34495e;
-    cursor: pointer;
-    pointer-events: none;
-    -webkit-transition: .25s all ease;
-    -o-transition: .25s all ease;
-    transition: .25s all ease;
-  }
-  /* Transition */
-  .select:hover::after {
-    color: #f39c12;
-  }
+.select2-dropdown.select2-dropdown--below{
+  width: 250px !important;
+}
+
+.select2-container--default .select2-selection--single{
+padding:6px;
+height: 40px;
+width: 250px; 
+font-size: 1.2em;  
+position: relative;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+background-image: #fff;
+width: 1200px;
+color: #fff;
+font-size: 1.3em;
+padding: 4px 12px;
+  height: 27px;
+position: absolute;
+top: 0px;
+right: 0px;
+width: 20px;
+}
